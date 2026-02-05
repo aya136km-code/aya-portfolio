@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Aya Khaled</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        nav {
+            background: #222;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+        }
+
+        /* Header */
+        header {
+            height: 100vh;
+            background-image: url(images\ \(14\).jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1::after {
+            content: "";
+            font-size: 40px;
+            animation-name: type;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            background: linear-gradient(90deg, #ffb347, #ff7a18);
+
+        }
+
+        header p {
+            margin: 15px 0;
+            font-size: 35px;
+        }
+
+        header button {
+            padding: 12px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            background: #ff9800;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+
+        header button:hover {
+            background: #e68900;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* تصميم زر التنزيل */
+.btn-download {
+  display: inline-block;
+  padding: 0.8em 1.2em;
+  background-color: #e68900; 
+  color: #ffffff;            
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.btn-download:hover {
+  background-color: #e65c00; 
+}
+        .about {
+            text-align: left;
+
+        }
+        .about p{
+             text-align: left;
+             
+
+        }
+
+        .me {
+            text-align: left;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .about-text {
+            width: 55%;
+        }
+
+        .about-image {
+            width: 40%;
+        }
+
+        .skills {
+            padding: 60px 80px;
+        }
+
+        .skills h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .skills-box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            padding: 12px 25px;
+            border-radius: 20px;
+            background-color: #e2861d;
+            color: #ccc;
+            font-size: 14px;
+            transition: 0.3;
+            animation: fadeIn 1s ease;
+        }
+
+        .skill:hover {
+            transform: scale(1.1);
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            background: #fff;
+            margin: 20px;
+            border-radius: 12px;
+            animation: slideUp 1.5s ease;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Projects */
+
+
+        
+       .projectss{
+            text-align: left;
+           display: flex;
+            direction: ltr;
+            gap: 20px;
+        }
+    .title-project {
+         text-align: left;
+          direction: ltr;
+          margin-bottom: 30px;
+          font-size: bold;
+
+      }
+        .project {
+            background: #eee;
+            padding: 20px;
+            width: 280px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #ff9800;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+section.contactt-form{
+    padding: 50px 20px;
+}
+
+        .contact-form {
+             
+            width: 60%;
+            text-align: left;
+            margin-left: 0;
+            margin-right: auto;
+            padding: 40px;
+        }
+form{
+    margin-left: 0%;
+    margin-right: auto;
+}
+        .contact-form h2 {
+            margin-bottom: 30px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+              text-align: left;
+            margin-left: 0;
+            margin-right: auto;
+
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            text-align: left;
+            direction: ltr;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #f59e0b;
+        }
+
+        .contact-form button {
+            background-color: #f59e0b;
+            color: #ccc;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #d97706;
+        }
+
+
+
+
+
+        /* Contact */
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            color: #ff9800;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .contact {
+            text-align: left;
+        }
+
+        @keyframes type {
+            0% {
+                content: "W";
+            }
+
+            10% {
+                content: "We"
+            }
+
+            20% {
+                content: "Wel";
+            }
+
+            30% {
+                content: "Well"
+            }
+
+            40% {
+                content: "Wellco";
+            }
+
+            50% {
+                content: "Wellcome ";
+            }
+
+            60% {
+                content: "Wellcome to"
+            }
+
+            70% {
+                content: "Wellcome to Ay";
+            }
+
+            85% {
+                content: "Wellcome  to Aya's";
+            }
+
+            100% {
+                content: "Wellcome to Aya's Webside"
+            }
+        }
+
+
+
+
+
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .projects {
+                justify-content: center;
+            }
+
+            .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <!-- Home -->
+    <header id="home">
+        <h1 class="type"></h1>
+        <p>Front-End Developer</p>
+        <button onclick="goTo('projects')">View Projects</button>
+        <button onclick="goTo('contact')">Contact Me</button>
+
+  <!-- بقية محتويات الهيدر -->
+  <a href="CV.3.docx" download class="btn-download">
+    📥 Download CV
+  </a>
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 class="me">About Me</h2>
+                <p>
+                    I am a passionate Front-End Developer with a strong interest in creating clean, modern, and
+                    user-friendly web interfaces.
+                    I work mainly with HTML and CSS, focusing on structure, visual details, and simple animations that
+                    enhance user experience.
+                    My goal is to turn ideas into well-designed, responsive websites that clearly reflect the client's
+                    vision, while continuously improving my skills with every project.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="images (13).jpeg" alt="About me">
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skills">
+            <h2>My Skills</h2>
+            <div class="skills-box">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Responsive Design</div>
+                <div class="skill">Animations</div>
+                <div class="skill">Git & GitHub</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Projects -->
+    <section id="projects">
+         <h2 class=" title-project">Projects</h2>
+        <div class="projectss">
+           
+            <div class="project">
+                <h3>Landing Page</h3>
+                <p>A selection of my Front-End work</p>
+                <a href="task day 5/index.html" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Login Page</h3>
+                <p>Designing a Login Page</p>
+                <a href="login project/index.html" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Animation Page</h3>
+                <p>Designing a Animation</p>
+                <a href="day6/index.html" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Working Page</h3>
+                <p>Designing a Webside for work</p>
+                <a href="task day 4/index.html" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section class="contactt-form">
+        <div class="contact-form">
+        <form>
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+            <input type="password" placeholder="Enter Your Password" required>
+            <textarea placeholder="Enter Your Massage" rows="5" required></textarea>
+            <button type="submit">Send Your Massage</button>
+        </form>
+</div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact">
+            <h2>Contact With Me</h2>
+            <div class="contact">
+                <a href="aya674804@gmail.com" target="_blank">Email</a>
+                <a href="https://www.facebook.com/share/1DjUFVnJKY/" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com/in/aya-undefined-b9384a377" target="_blank">LinkedIn</a>
+                <a href="01007208781" target="_blank">My Phone Number</a>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function goTo(id) {
+            document.getElementById(id).scrollIntoView();
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
