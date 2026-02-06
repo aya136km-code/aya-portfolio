@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+}
+
+header .img {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+body {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(newم.png);
+    background-attachment: fixed;
+    padding-bottom: 10px;
+}
+
+
+.logo {
+
+    padding: 200px;
+    background-position: center;
+
+}
+
+.button {
+    width: 110px;
+    height: 30px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.logo h2 {
+    font-size: bold;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.big {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.small h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+
+.small p {
+    font-size: 14px;
+    color: #555;
+}
+
+.small.dark {
+    background: #9aa0a6;
+    color: #fff;
+}
+
+.small.dark p {
+    color: #eee;
+}
+
+.small1 {
+    background-color: #9aa0a6;
+
+}
+
+.small2 {
+    background-color: #cfd3d6;
+
+}
+
+.small3 {
+    background-color: white;
+
+
+
+}
+
+.small4 {
+    background-color: #eee;
+
+}
+
+.About {
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+    border-bottom: #9aa0a6;
+    padding-bottom: 100px;
+
+}
+
+.About h2 {
+    padding-bottom: 10px;
+}
+
+.info {
+    background-image: url(aya.png);
+    width: 100%;
+    height: 60%;
+    background-size: 100%;
+    padding: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info h2 {
+    color: white;
+    text-align: center;
+    font-size: bold;
+}
+
+.info .butt {
+    background-color: black;
+    color: #eee;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+.can h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    background-color: #eee;
+}
+
+.can p {
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+    padding-bottom: 20px;
+}
+
+.services {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+
+}
+
+.service {
+    box-shadow: 10px 10px 10px 10px gray;
+    display: flex;
+    background-color: #fff;
+    width: 200px;
+    height: 250px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: 80%;
+}
+
+.link a {
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+    padding-bottom: 200px;
+    text-decoration: underline;
+}
+
+.link p {
+    background-color: #eee;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+
+.team {
+    text-align: center;
+    padding: 50px;
+    background: white;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+   
+}
+
+.team-card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  
+
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.team h3 {
+    margin-top: 15px;
+}
+
+.team-card p {
+    color: black;
+    padding-bottom: 10px;
+}
+
+/* .footer{
+    background-color: #1f2f44;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+} */
+
+.footer {
+    background-color: #1f2f44;
+    color: #fff;
+    padding: 50px 50px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-content {
+    margin-top: 10px;
+}
+
+.spcial span {
+    margin-right: 15px;
+    padding-bottom: 10px;
+   
+}
+
+.copy {
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.7;
+    text-decoration: overline;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: end; 
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.img{
+    display: flex;
+}
+.new{
+
+}
